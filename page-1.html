@@ -105,6 +105,7 @@
 							case "Photos":
 								ImgPhotos = `Photos : \`\`\`${survey.data[key]}\`\`\`\n`;
 								break;
+								
 
 							default:
 								break;
@@ -120,8 +121,8 @@
 						promtText += `${ImgTips}`;
 					}
 
-					examplePromttext = `\`\`\`high quality image, 4k, 8k, HD, UHD,highly realistic, realistic portrait, anatomically correct, realistic photograph, real colors, award winning photo, detailed face, realistic eyes, beautiful, sharp focus, high resolution, volumetric lighting, incredibly detailed, masterpiece, breathtaking, exquisite, great attention to skin and eyes\`\`\``;
-					promtText += `Then write the photo-realistic image prompt using a comma separator, for example: ${examplePromttext}\n The image should be Instagram-worthy, UHD, realistic, great attention to skin and eyes, hands, fingers. mention about suitable dress, facial expression, face position, according to the photo and situation. Give every kind of instruction to the model. \n I need to prompt for each photos i mentioned bellow\n`;
+					examplePromttext = `\`\`\`A photo of an aesthetic woman in the streets of New York, she is wearing brown wool coat and turtleneck sweater, she has long hair pulled back into ponytail, she looks straight ahead with her head slightly tilted to left side, soft natural lighting, sunny day, natural colors, backlit, shot on Kodak Gold 400 film\`\`\``;
+					promtText += `Then write the photo-realistic image prompt, for example: ${examplePromttext}\n The image should be Instagram-worthy, UHD, realistic, great attention to skin and eyes, hands, fingers. mention about suitable dress, facial expression, face position, according to the photo and situation. Give every kind of instruction to the model. \n I need to prompt for each photos i mentioned bellow\n`;
 
 					if (ImgPhotos != "") {
 						promtText += `${ImgPhotos}\n`;
